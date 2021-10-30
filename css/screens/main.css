@@ -1,5 +1,9 @@
 .main-box {
-  background-color: rosybrown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
 }
 
 .time-box {
@@ -24,6 +28,7 @@
   margin: 3vh 0 5vh 0;
   font-size: 2em;
   text-align: center;
+  font-weight: 600;
 }
 
 .todo-box {
@@ -42,6 +47,7 @@
   font-size: 1.5em;
   margin-bottom: 1vh;
   opacity: 0.7;
+  font-weight: 600;
 }
 
 .momentum__author {
