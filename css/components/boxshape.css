@@ -1,0 +1,11 @@
+.box-shape {
+  font-size: 2em;
+  text-align: center;
+  opacity: 0.7;
+
+  border: none;
+  border-radius: 20px;
+  width: 20vw;
+  height: 8vh;
+  box-shadow: rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,16 @@
+.hidden {
+  display: none;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box span {
+  font-size: 3em;
+  color: antiquewhite;
+  margin-bottom: 3vw;
+}
