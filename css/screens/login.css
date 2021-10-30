@@ -14,3 +14,16 @@
   color: antiquewhite;
   margin-bottom: 3vw;
 }
+
+/* @keyframes inputClick {
+  from {
+    border-bottom: none;
+  }
+  to {
+    border-bottom: 5px solid #fbe100;
+  }
+}
+
+.login-box input {
+  animation: inputClick 1s ease-in-out forwards;
+} */

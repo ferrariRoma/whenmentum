@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "components/wallpaper.css";
 @import "screens/login.css";
+@import "screens/main.css";
 @import "components/boxshape.css";
 
 body {
@@ -21,4 +22,8 @@ a {
 
 input:focus {
   outline: none;
+}
+
+.hidden {
+  display: none;
 }

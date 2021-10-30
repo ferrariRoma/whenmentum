@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <form class="login-box hidden wallpaper-box">
+    <form class="login-box wallpaper-box hidden">
       <span>Welcome, Your place</span>
       <input
         class="box-shape"
@@ -20,15 +20,28 @@
 
     <main class="main-box hidden">
       <div class="time-box">
-        <h1 class="greeting"></h1>
-        <div class="time-box__watch">시간</div>
+        <div class="time-box__watch">
+          시간
+          <div class="weather">
+            <span>날씨</span>
+            <span>날씨</span>
+          </div>
+        </div>
         <div class="time-box__timer">타이머</div>
       </div>
+      <h1 class="greeting"></h1>
 
-      <div class="todo-box"></div>
+      <div class="todo-box">할일</div>
+
+      <div class="momentum">
+        <span class="momentum__quotes"></span>
+        <span class="momentum__author"></span>
+      </div>
     </main>
 
     <script src="js/wallpaper.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
   </body>
 </html>
