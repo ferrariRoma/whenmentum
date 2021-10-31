@@ -9,19 +9,32 @@
 /* time part */
 .time-box {
   display: flex;
-  background-color: royalblue;
   width: 70vw;
   height: 30vh;
 }
 
 .time-box__watch {
-  background-color: seagreen;
+  background-color: rgba(256, 256, 256, 0.3);
+  border-radius: 10px;
   width: 48%;
   margin-right: 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  animation: timeAni 1s ease-in-out forwards;
+}
+
+@keyframes timeAni {
+  from {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .watch__current {
@@ -30,8 +43,45 @@
 }
 
 .weather {
-  background-color: skyblue;
+  background-color: rgba(256, 256, 256, 0.3);
+  border-radius: 10px;
   width: 48%;
+  display: flex;
+  flex-direction: column;
+  animation: weatherAni 1s ease-in-out forwards;
+}
+
+@keyframes weatherAni {
+  from {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.weather__city {
+  margin: 3vh 0 4vh 2vw;
+  font-size: 1em;
+}
+.weather__temp {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 2vh;
+  font-weight: 600;
+}
+
+.weather__main {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1vh;
+}
+
+.weather__temp__max {
+  text-align: center;
+  font-size: 1.5em;
 }
 
 /* todo part */
@@ -42,6 +92,23 @@
   font-weight: 600;
 }
 
+.greeting,
+.todo-box,
+.todo-list {
+  animation: greetingAni 1s ease-in-out forwards;
+}
+
+@keyframes greetingAni {
+  from {
+    transform: translateY(10vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .todo-box {
   margin-bottom: 2vh;
   text-align: left;
@@ -49,8 +116,9 @@
 
 .todo-list {
   width: 20vw;
-  height: 20vh;
+  height: 10vh;
   overflow: auto;
+  margin-bottom: 5vh;
 }
 
 .todo-list__btn {
@@ -85,13 +153,55 @@
   font-size: 1.5em;
 }
 
+/* link */
+.site-link {
+  margin-top: 3vh;
+  width: 20vw;
+  display: flex;
+  justify-content: space-evenly;
+  animation: linkAni 1s ease-in-out forwards;
+}
+
+@keyframes linkAni {
+  from {
+    transform: translateY(10vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.site-link img {
+  width: 3vw;
+  border-radius: 10px;
+  opacity: 0.5;
+  transform: scale(0.7, 0.7);
+}
+
+.site-link img:hover {
+  animation: imgAni 0.3s ease-in-out forwards;
+}
+
+@keyframes imgAni {
+  from {
+    opacity: 0.5;
+    transform: scale(0.7, 0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
 /* quotes part */
 .momentum {
   text-align: center;
   display: flex;
   flex-direction: column;
   position: fixed;
-  bottom: 2vh;
+  bottom: 3vh;
   z-index: -1;
 }
 
@@ -100,9 +210,29 @@
   margin-bottom: 1vh;
   opacity: 0.7;
   font-weight: 600;
+  animation: momentumAni 1s ease-in-out forwards;
+}
+
+@keyframes momentumAni {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.7;
+  }
 }
 
 .momentum__author {
   font-size: 1em;
   opacity: 0.4;
+  animation: momentumAni 1s ease-in-out forwards;
+}
+
+@keyframes momentumAni {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.4;
+  }
 }

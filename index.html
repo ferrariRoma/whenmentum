@@ -23,25 +23,42 @@
     <main class="main-box wallpaper-box hidden">
       <div class="time-box">
         <div class="time-box__watch">
-          <span class="watch__current">시간</span>
+          <span class="watch__current"></span>
         </div>
         <div class="weather">
-          <span>날씨</span>
-          <span>도시</span>
-          <span>최고온도</span>
-          <span>최저온도</span>
+          <span class="weather__city"></span>
+          <span class="weather__temp"></span>
+          <span class="weather__main"></span>
+          <span class="weather__temp__max"></span>
         </div>
       </div>
       <!-- todo ⚐⚑ -->
       <h1 class="greeting"></h1>
       <form class="todo-box">
         <input
-          class="box-shape todoInput"
+          class="box-shape__todo todoInput"
           type="text"
           placeholder="I must do this today"
         />
       </form>
       <ul class="todo-list"></ul>
+      <div class="site-link">
+        <a href="http://naver.com" target="_blank">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUAxzz///8AxjcAxCZQ0Gjc9N/m9+jR8dbQ9Ntp2YMAxjgAxCwAxTAAxTP7//3p+Osfy01R1HC068Hx/PTL8tVIz2O77cfF7ct/3pXX9d8Awx+L4aA70F+Y5KlJ0mqn6LcszVWh5rB024yH4Jtg2oBa1Xau6bwozVMQgS/cAAACxklEQVR4nO3c7W7aQBBG4Vm7QPGabwqBkBSSpr3/O6yUKi0EbK8NjTKvzvPbWnHixWInks0AAAAAAAAAAAAAAAAAAAAAAAAAQEORJ4kJS8WbrXRLxbdFP8FknjcuFVeTlJXWH5yYfQlphmXTUvnXpIV6zX+rm0ouHE+LhqW8F4Zl0010XxjuGhL9FzbtU/+FYbOtXUqgMNzXPugVCsMuq1lKonAzqllKojA81OxTjcLwWH0XRQr78oXhe+UHVCkMs6q7KFM4sYqfNjKFYV7xPNUprDoqChUuLu9TocKwuvgTXKkwPF3ap1KFF4+KUoVheeF5qlUY7s4TxQrH+7Ojolhh2JzdRLXC85GGXOHZSEOvsPfuJuoVhsNpomDhu6OiYmE/O/5po1h4OtKQLDzZp5qFx0dFzcLjkYZo4dFIQ7Xw3z5VLQzrt08sW/h3pKFb+DbS0C0My1y9MDxH9cLx61FRuTBsSvXC15GGdmHYZ+qF/VK9MByiemGYbdUL+87v4aT5ksPSdeGPRfM1CZd85sKXtOv8Fg63P9ULS0v4KrouHI0e1QstP6gXWt5XL8x26oUWH9QLrdyoF2a7sXihxWf1wtRjruPCwq7dp5+90Mon9UKLa/XCYpp2DvRbaOVQvdDyuXphMbpmn3ootNE1Iw0XhRavGGn4KCyy7kdFH4U2mqkXXjHS8FJoses+dVPYeaThptDivXqhld2Oio4KO440HBV2HGl4KrRt2n8MHRd2Gmm4Kuw00vBVaHGlXthhpOGssMNIw1th+5GGu8Iia7lP3RW2Pir6K2x7VHRYWBStjooOC1vuU4+FFg/qhRZ76oXZL/XCNiMNp4UtRhpeC7N96lHRa6HFO/VCyxNHGh9dWOx6gwSbl7r3ev5ZaZqy0GBQ9TK0/ybxjeWNgTd99zkAAAAAAAAAAAAAAAAAAAAAAAAACb8BlaxF0SY61+4AAAAASUVORK5CYII="
+          />
+        </a>
+        <a href="http://google.com" target="_blank">
+          <img
+            src="https://pbs.twimg.com/profile_images/770139154898382848/ndFg-IDH.jpg"
+          />
+        </a>
+        <a href="http://github.com" target="_blank">
+          <img
+            src="https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF9_400x400.jpg"
+          />
+        </a>
+      </div>
       <!-- quote -->
       <div class="momentum">
         <span class="momentum__quotes"></span>
@@ -54,6 +71,7 @@
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
     <script
       src="https://kit.fontawesome.com/300544da27.js"
       crossorigin="anonymous"
