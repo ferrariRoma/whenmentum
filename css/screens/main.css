@@ -208,7 +208,7 @@
 .momentum__quotes {
   font-size: 1.5em;
   margin-bottom: 1vh;
-  opacity: 0.7;
+  opacity: 1;
   font-weight: 600;
   animation: momentumAni 1s ease-in-out forwards;
 }
@@ -218,13 +218,13 @@
     opacity: 0;
   }
   to {
-    opacity: 0.7;
+    opacity: 1;
   }
 }
 
 .momentum__author {
   font-size: 1em;
-  opacity: 0.4;
+  opacity: 1;
   animation: momentumAni 1s ease-in-out forwards;
 }
 
@@ -233,6 +233,6 @@
     opacity: 0;
   }
   to {
-    opacity: 0.4;
+    opacity: 1;
   }
 }
