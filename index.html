@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <!-- log in screen -->
     <form class="login-box wallpaper-box hidden">
       <span>Welcome, Your place</span>
       <input
@@ -17,22 +18,31 @@
         placeholder="Write your name"
       />
     </form>
-
+    <!-- main screen -->
+    <!-- time -->
     <main class="main-box wallpaper-box hidden">
       <div class="time-box">
         <div class="time-box__watch">
-          시간
-          <div class="weather">
-            <span>날씨</span>
-            <span>날씨</span>
-          </div>
+          <span class="watch__current">시간</span>
         </div>
-        <div class="time-box__timer">타이머</div>
+        <div class="weather">
+          <span>날씨</span>
+          <span>도시</span>
+          <span>최고온도</span>
+          <span>최저온도</span>
+        </div>
       </div>
+      <!-- todo ⚐⚑ -->
       <h1 class="greeting"></h1>
-
-      <div class="todo-box">할일</div>
-
+      <form class="todo-box">
+        <input
+          class="box-shape todoInput"
+          type="text"
+          placeholder="I must do this today"
+        />
+      </form>
+      <ul class="todo-list"></ul>
+      <!-- quote -->
       <div class="momentum">
         <span class="momentum__quotes"></span>
         <span class="momentum__author"></span>
@@ -43,6 +53,7 @@
     <script src="js/login.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
+    <script src="js/todo.js"></script>
     <script
       src="https://kit.fontawesome.com/300544da27.js"
       crossorigin="anonymous"

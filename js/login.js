@@ -4,7 +4,7 @@ const inputText = document.querySelector(".login-box input");
 const greeting = document.querySelector(".greeting");
 
 const HIDDEN_CLASS = "hidden";
-const LOCAL_KEY = "todos";
+const LOCAL_KEY = "username";
 
 function handleSubmit(event) {
   event.preventDefault();
