@@ -1,3 +1,3 @@
 # whenmentum
-nomad vanilla js project
+vanilla js project
 Made momentum app
